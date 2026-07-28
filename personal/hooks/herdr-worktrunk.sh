@@ -5,7 +5,7 @@
 #     "SessionStart": [
 #       {
 #         "hooks": [
-#           { "type": "command", "command": "$HOME/.claude/personal/hooks/herdr-worktree.sh" }
+#           { "type": "command", "command": "$HOME/.claude/personal/hooks/herdr-worktrunk.sh" }
 #         ]
 #       }
 #     ]
