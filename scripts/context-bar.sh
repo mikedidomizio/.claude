@@ -20,9 +20,7 @@
 #     "command": "~/.claude/scripts/context-bar.sh"
 #   }
 
-# Color theme: gray, orange, blue, teal, green, lavender, rose, gold, slate, cyan
-# Preview colors with: bash scripts/color-preview.sh
-COLOR="blue"
+# Color theme: gray, orange, blue, teal, green, lavender, rose, gold, slate, cyanCOLOR="blue"
 
 # Color codes
 C_RESET='\033[0m'
