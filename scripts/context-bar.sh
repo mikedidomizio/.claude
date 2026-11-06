@@ -1,4 +1,24 @@
 #!/bin/bash
+#
+# Claude Code status line: model, directory, git status, context window usage,
+# plan usage limits (Pro/Max) and your last message.
+#
+#   Opus 5.5 | 📁my-app | 🔀main (2 files uncommitted, synced 5m ago) | ███▄░░░░░░ 35% of 200k tokens
+#   Session ████▄░░░░░ 43% · resets in 2h 15m (3:00pm)   Weekly ███████▄░░ 74% · resets in 3d 11h (Mon 9:00am)
+#   💬 refactor the auth middleware to use the new session store
+#
+# Usage limits turn yellow at 70% and red with a ⚠ at 90%. That line is hidden
+# for API key, Bedrock and Vertex sessions, which have no plan limits.
+#
+# Install (requires jq):
+#   mkdir -p ~/.claude/scripts
+#   cp context-bar.sh ~/.claude/scripts/ && chmod +x ~/.claude/scripts/context-bar.sh
+#
+# Then add to ~/.claude/settings.json:
+#   "statusLine": {
+#     "type": "command",
+#     "command": "~/.claude/scripts/context-bar.sh"
+#   }
 
 # Color theme: gray, orange, blue, teal, green, lavender, rose, gold, slate, cyan
 # Preview colors with: bash scripts/color-preview.sh
