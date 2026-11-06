@@ -11,3 +11,5 @@
 # !*/
 !personal/
 !personal/**
+!scripts/
+!scripts/**
